@@ -1,4 +1,4 @@
-import { Card } from "@root/game-state";
+import { Card } from "../game-state";
 import { buff, minion, spell } from "./card-builders";
 import { build_attack_modifier, build_barbs, build_defense_modifier, build_heal, build_weaken } from "./effects";
 

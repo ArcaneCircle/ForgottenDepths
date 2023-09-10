@@ -1,6 +1,6 @@
-import { V2 } from "@math/vector";
-import { Card, Effect } from "@root/game-state";
-import { unit_name_map } from "@root/nodes/unit";
+import { V2 } from "../math/vector";
+import { Card, Effect } from "../game-state";
+import { unit_name_map } from "../nodes/unit";
 
 let unit_base_stats: V2[] = [
   [2, 1],

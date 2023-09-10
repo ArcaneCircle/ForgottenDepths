@@ -1,7 +1,7 @@
-import { assert } from "@debug/assert";
-import { Enemy } from "@root/game-state";
-import { unpack_number_array_from_string } from "@root/util";
-import { floor, random_int } from "math";
+import { assert } from "../debug/assert";
+import { Enemy } from "../game-state";
+import { unpack_number_array_from_string } from "../util";
+import { floor, random_int } from "../math/math";
 
 let enemy_attack_defense = "10|01|20|12|13".split("|").map(a => unpack_number_array_from_string(a));
 

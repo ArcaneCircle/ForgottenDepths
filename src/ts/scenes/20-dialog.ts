@@ -1,13 +1,13 @@
-import { BLACK_T75 } from "@graphics/colour";
-import { push_quad } from "@graphics/quad";
-import { push_text, RIGHT_ALGIN_TEXT } from "@graphics/text";
-import { A_PRESSED, B_PRESSED, controls_used, DOWN_PRESSED, UP_PRESSED } from "@input/controls";
-import { animation_frame } from "@root/animation";
-import { render_panel } from "@root/nodes/panel";
-import { render_text_menu } from "@root/nodes/text-menu";
-import { get_next_scene_id, pop_scene, Scene } from "@root/scene";
-import { SCREEN_CENTER_X, SCREEN_CENTER_Y, SCREEN_HEIGHT, SCREEN_WIDTH } from "@root/screen";
-import { zzfx } from "@root/zzfx";
+import { BLACK_T75 } from "../graphics/colour";
+import { push_quad } from "../graphics/quad";
+import { push_text, RIGHT_ALGIN_TEXT } from "../graphics/text";
+import { A_PRESSED, B_PRESSED, controls_used, DOWN_PRESSED, UP_PRESSED } from "../input/controls";
+import { animation_frame } from "../animation";
+import { render_panel } from "../nodes/panel";
+import { render_text_menu } from "../nodes/text-menu";
+import { get_next_scene_id, pop_scene, Scene } from "../scene";
+import { SCREEN_CENTER_X, SCREEN_CENTER_Y, SCREEN_HEIGHT, SCREEN_WIDTH } from "../screen";
+import { zzfx } from "../zzfx";
 export namespace Dialog
 {
   let dialogQueue: string[] = [];

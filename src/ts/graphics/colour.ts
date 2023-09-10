@@ -1,4 +1,4 @@
-import { V4 } from "@math/vector";
+import { V4 } from "../math/vector";
 
 export let abgr_number_to_abgr_v4 = (abgr: number): V4 =>
 {

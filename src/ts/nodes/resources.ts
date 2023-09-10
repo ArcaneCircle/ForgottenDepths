@@ -1,7 +1,7 @@
-import { push_text, RIGHT_ALGIN_TEXT } from "@graphics/text";
-import { is_touch } from "@input/controls";
-import { game_state } from "@root/game-state";
-import { SCREEN_WIDTH } from "@root/screen";
+import { push_text, RIGHT_ALGIN_TEXT } from "../graphics/text";
+import { is_touch } from "../input/controls";
+import { game_state } from "../game-state";
+import { SCREEN_WIDTH } from "../screen";
 import { render_panel } from "./panel";
 
 let resource_names = ["bone", "rotting meat", "soul", "human heart", "lich heart"];

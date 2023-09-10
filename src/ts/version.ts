@@ -1,2 +1,1 @@
-import version from "@project_root/VERSION.txt";
-export let VERSION = version;
+export let VERSION = "2.0.0";

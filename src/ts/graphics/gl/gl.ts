@@ -1,7 +1,7 @@
-import { assert } from "@debug/assert";
-import { WHITE } from "@graphics/colour";
-import { unpack_number_array_from_string } from "@root/util";
-import { math } from "math";
+import { assert } from "../../debug/assert";
+import { WHITE } from "../colour";
+import { unpack_number_array_from_string } from "../../util";
+import { math } from "../../math/math";
 
 let webgl_context: WebGLRenderingContext;
 let width: number;

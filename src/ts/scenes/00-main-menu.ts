@@ -1,10 +1,10 @@
-import { CENTERED_TEXT, push_text, SMALL_FONT_AND_CENTERED_TEXT } from "@graphics/text";
-import { A_PRESSED, controls_used, DOWN_PRESSED, UP_PRESSED } from "@input/controls";
-import { has_save_file, load_game, setup_game_state } from "@root/game-state";
-import { render_text_menu } from "@root/nodes/text-menu";
-import { get_next_scene_id, Scene, switch_to_scene } from "@root/scene";
-import { SCREEN_CENTER_X, SCREEN_CENTER_Y, SCREEN_HEIGHT } from "@root/screen";
-import { safe_add, safe_subtract } from "math";
+import { CENTERED_TEXT, push_text, SMALL_FONT_AND_CENTERED_TEXT } from "../graphics/text";
+import { A_PRESSED, controls_used, DOWN_PRESSED, UP_PRESSED } from "../input/controls";
+import { has_save_file, load_game, setup_game_state } from "../game-state";
+import { render_text_menu } from "../nodes/text-menu";
+import { get_next_scene_id, Scene, switch_to_scene } from "../scene";
+import { SCREEN_CENTER_X, SCREEN_CENTER_Y, SCREEN_HEIGHT } from "../screen";
+import { safe_add, safe_subtract } from "../math/math";
 import { Hub } from "./01-hub";
 
 export namespace MainMenu

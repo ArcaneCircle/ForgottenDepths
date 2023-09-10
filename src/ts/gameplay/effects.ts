@@ -1,5 +1,5 @@
-import { Effect, Enemy, game_state } from "@root/game-state";
-import { safe_add } from "math";
+import { Effect, Enemy, game_state } from "../game-state";
+import { safe_add } from "../math/math";
 
 
 let attack_modifier = (effect: Effect) =>

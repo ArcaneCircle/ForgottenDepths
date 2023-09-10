@@ -1,9 +1,9 @@
-import { push_quad, push_textured_quad, TextureQuadParameters } from "@graphics/quad";
-import { push_text, TextParameters } from "@graphics/text";
-import { canvas_reference, document_reference, request_fullscreen, SCREEN_HEIGHT, SCREEN_WIDTH, window_reference } from "@root/screen";
-import { unpack_number_array_from_string } from "@root/util";
-import { boop, boop_good, zzfx_play } from "@root/zzfx";
-import { floor, is_point_in_circle, is_point_in_rect } from "math";
+import { push_quad, push_textured_quad, TextureQuadParameters } from "../graphics/quad";
+import { push_text, TextParameters } from "../graphics/text";
+import { canvas_reference, document_reference, request_fullscreen, SCREEN_HEIGHT, SCREEN_WIDTH, window_reference } from "../screen";
+import { unpack_number_array_from_string } from "../util";
+import { boop, boop_good, zzfx_play } from "../zzfx";
+import { floor, is_point_in_circle, is_point_in_rect } from "../math/math";
 
 let hardware_key_state = unpack_number_array_from_string("000000");
 let key_state = unpack_number_array_from_string("000000");

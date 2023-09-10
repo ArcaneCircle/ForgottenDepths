@@ -1,4 +1,4 @@
-import { assert } from "@debug/assert";
+import { assert } from "./debug/assert";
 
 export let SCREEN_WIDTH = 640;
 export let SCREEN_HEIGHT = 360;

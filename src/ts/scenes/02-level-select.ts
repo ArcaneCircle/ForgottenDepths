@@ -1,11 +1,11 @@
-import { generate_level } from "@gameplay/level-gen";
-import { push_text } from "@graphics/text";
-import { A_PRESSED, B_PRESSED, controls_used, DOWN_PRESSED, UP_PRESSED } from "@input/controls";
-import { game_state } from "@root/game-state";
-import { render_text_menu } from "@root/nodes/text-menu";
-import { get_next_scene_id, Scene, switch_to_scene } from "@root/scene";
-import { SCREEN_CENTER_X, SCREEN_CENTER_Y, SCREEN_WIDTH } from "@root/screen";
-import { floor, math, safe_add, safe_subtract } from "math";
+import { generate_level } from "../gameplay/level-gen";
+import { push_text } from "../graphics/text";
+import { A_PRESSED, B_PRESSED, controls_used, DOWN_PRESSED, UP_PRESSED } from "../input/controls";
+import { game_state } from "../game-state";
+import { render_text_menu } from "../nodes/text-menu";
+import { get_next_scene_id, Scene, switch_to_scene } from "../scene";
+import { SCREEN_CENTER_X, SCREEN_CENTER_Y, SCREEN_WIDTH } from "../screen";
+import { floor, math, safe_add, safe_subtract } from "../math/math";
 import { Hub } from "./01-hub";
 import { Dungeon } from "./03-dungeon";
 export namespace LevelSelect

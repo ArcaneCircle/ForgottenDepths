@@ -1,5 +1,5 @@
-import { V2 } from "@math/vector";
-import { number_sort } from "math";
+import { V2 } from "./math/vector";
+import { number_sort } from "./math/math";
 import { window_reference } from "./screen";
 import { unpack_number_array_from_string } from "./util";
 

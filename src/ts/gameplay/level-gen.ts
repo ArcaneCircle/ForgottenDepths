@@ -1,6 +1,6 @@
-import { assert } from "@debug/assert";
-import { unpack_number_array_from_string } from "@root/util";
-import { ceil, floor, math, max, random_int, shuffle } from "math";
+import { assert } from "../debug/assert";
+import { unpack_number_array_from_string } from "../util";
+import { ceil, floor, math, max, random_int, shuffle } from "../math/math";
 import { Enemy, game_state, Room } from "../game-state";
 import { get_boss, get_enemy } from "./enemy-builder";
 

@@ -1,12 +1,12 @@
-import { abgr_number_to_rgba_v4, GREEN, RED, WHITE } from "@graphics/colour";
-import { push_textured_quad } from "@graphics/quad";
-import { push_text, SMALL_FONT_AND_CENTERED_TEXT } from "@graphics/text";
-import { set_V2, set_V4, V4 } from "@math/vector";
-import { Enemy } from "@root/game-state";
-import { spirit_particle } from "@root/particle-definitions";
-import { emit_particle } from "@root/particle-system";
-import { unpack_number_array_from_string } from "@root/util";
-import { ceil } from "math";
+import { abgr_number_to_rgba_v4, GREEN, RED, WHITE } from "../graphics/colour";
+import { push_textured_quad } from "../graphics/quad";
+import { push_text, SMALL_FONT_AND_CENTERED_TEXT } from "../graphics/text";
+import { set_V2, set_V4, V4 } from "../math/vector";
+import { Enemy } from "../game-state";
+import { spirit_particle } from "../particle-definitions";
+import { emit_particle } from "../particle-system";
+import { unpack_number_array_from_string } from "../util";
+import { ceil } from "../math/math";
 import { render_percentage_bar } from "./percent-bar";
 
 export let unit_sprite = unpack_number_array_from_string("34021");

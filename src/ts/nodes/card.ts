@@ -1,9 +1,9 @@
-import { BLACK, DARK_GREY, GREEN, RED, WHITE } from "@graphics/colour";
-import { push_quad, push_textured_quad } from "@graphics/quad";
-import { push_text, SMALL_FONT_AND_CENTERED_TEXT } from "@graphics/text";
-import { V2 } from "@math/vector";
-import { Card, game_state } from "@root/game-state";
-import { max } from "math";
+import { BLACK, DARK_GREY, GREEN, RED, WHITE } from "../graphics/colour";
+import { push_quad, push_textured_quad } from "../graphics/quad";
+import { push_text, SMALL_FONT_AND_CENTERED_TEXT } from "../graphics/text";
+import { V2 } from "../math/vector";
+import { Card, game_state } from "../game-state";
+import { max } from "../math/math";
 import { render_spirit, unit_palette_map, unit_sprite } from "./unit";
 
 let card_type_text = ['minion', 'minion', 'minion', 'buff', 'spell'];

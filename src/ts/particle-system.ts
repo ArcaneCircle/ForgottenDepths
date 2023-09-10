@@ -1,10 +1,10 @@
-import { assert } from "@debug/assert";
-import { rgba_to_abgr_number } from "@graphics/colour";
-import { push_textured_quad } from "@graphics/quad";
-import { add_V2, set_V2, set_V4, V2, V4 } from "@math/vector";
-import { lerp } from "@root/interpolate";
-import { gl_restore, gl_save, gl_scale, gl_translate } from "gl";
-import { floor, math } from "math";
+import { assert } from "./debug/assert";
+import { rgba_to_abgr_number } from "./graphics/colour";
+import { push_textured_quad } from "./graphics/quad";
+import { add_V2, set_V2, set_V4, V2, V4 } from "./math/vector";
+import { lerp } from "./interpolate";
+import { gl_restore, gl_save, gl_scale, gl_translate } from "./graphics/gl/gl";
+import { floor, math } from "./math/math";
 
 type Particle = {
   _position: V2;

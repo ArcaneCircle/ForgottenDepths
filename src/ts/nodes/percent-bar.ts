@@ -1,7 +1,7 @@
-import { BLACK, WHITE } from "@graphics/colour";
-import { push_quad } from "@graphics/quad";
-import { push_text } from "@graphics/text";
-import { ceil, math } from "math";
+import { BLACK, WHITE } from "../graphics/colour";
+import { push_quad } from "../graphics/quad";
+import { push_text } from "../graphics/text";
+import { ceil, math } from "../math/math";
 
 export let render_percentage_bar = (x: number, y: number, width: number, height: number, value: number, max_value: number, colour: number) =>
 {

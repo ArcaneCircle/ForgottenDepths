@@ -1,8 +1,8 @@
-import { character_code_map } from "@graphics/text";
-import palette_data_url from "@res/palette.webp";
-import texture_atlas_data_url from "@res/sheet.webp";
-import { document_reference } from "@root/screen";
-import { gl_upload_texture } from "gl";
+import { character_code_map } from "../text";
+import palette_data_url from "../../../res/palette.webp";
+import texture_atlas_data_url from "../../../res/sheet.webp";
+import { document_reference } from "../../screen";
+import { gl_upload_texture } from "../gl/gl";
 import { texture_definitions } from "./texture-definitions";
 
 export type Texture = {

@@ -1,15 +1,13 @@
+# Logs
+pnpm-debug.log*
+.pnpm-debug.log
+
 node_modules
-node_modules/**/*
-
-build
-build/**/*
-
 dist
-dist/**/*
+dist-xdc
 
-tools/*
-!tools/7z
-!tools/7z/*
-
-# Local Netlify folder
-.netlify
+# Editor directories and files
+.vscode/*
+.idea
+.DS_Store
+*~

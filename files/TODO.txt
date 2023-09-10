@@ -1,9 +1,0 @@
-Balance
-
-BUGS
-
-Nice to Haves
-  More Palette swaps for level tiles
-  Card Level Colours
-
-Optimizations

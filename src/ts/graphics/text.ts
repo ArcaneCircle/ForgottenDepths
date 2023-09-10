@@ -1,7 +1,7 @@
-import { assert } from "@debug/assert";
-import { gl_push_textured_quad, gl_restore, gl_save, gl_scale, gl_translate } from "gl";
-import { floor } from "math";
-import { TEXTURES } from "texture";
+import { assert } from "../debug/assert";
+import { gl_push_textured_quad, gl_restore, gl_save, gl_scale, gl_translate } from "./gl/gl";
+import { floor } from "../math/math";
+import { TEXTURES } from "./texture/texture";
 import { WHITE } from "./colour";
 
 export type TextParameters =

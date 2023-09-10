@@ -1,6 +1,6 @@
-import { push_text } from "@graphics/text";
-import { fire_particle } from "@root/particle-definitions";
-import { emit_particles } from "@root/particle-system";
+import { push_text } from "../graphics/text";
+import { fire_particle } from "../particle-definitions";
+import { emit_particles } from "../particle-system";
 
 export let render_text_menu = (x: number, y: number, menu_options: string[], number_of_options: number, selected_option_index: number, scale: number = 2) =>
 {

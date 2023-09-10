@@ -1,10 +1,10 @@
-import { card_list } from "@gameplay/cards";
-import { push_textured_quad } from "@graphics/quad";
-import { push_text } from "@graphics/text";
-import { load_game } from "@root/game-state";
-import { render_card } from "@root/nodes/card";
-import { get_next_scene_id, Scene } from "@root/scene";
-import { SCREEN_CENTER_X, SCREEN_CENTER_Y } from "@root/screen";
+import { card_list } from "../gameplay/cards";
+import { push_textured_quad } from "../graphics/quad";
+import { push_text } from "../graphics/text";
+import { load_game } from "../game-state";
+import { render_card } from "../nodes/card";
+import { get_next_scene_id, Scene } from "../scene";
+import { SCREEN_CENTER_X, SCREEN_CENTER_Y } from "../screen";
 export namespace Image160160
 {
   let _reset_fn = () =>

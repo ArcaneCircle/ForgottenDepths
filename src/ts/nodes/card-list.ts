@@ -1,7 +1,7 @@
-import { card_list } from "@gameplay/cards";
-import { DARK_GREY, WHITE } from "@graphics/colour";
-import { push_text } from "@graphics/text";
-import { is_touch } from "@input/controls";
+import { card_list } from "../gameplay/cards";
+import { DARK_GREY, WHITE } from "../graphics/colour";
+import { push_text } from "../graphics/text";
+import { is_touch } from "../input/controls";
 import { render_panel } from "./panel";
 
 export let render_card_list = (x: number, y: number, card_id_list: number[], list_length: number, selected_index: number, skip: number = 0) =>

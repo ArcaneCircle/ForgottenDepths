@@ -1,6 +1,6 @@
 'use strict';
 
-import { math, max } from "math";
+import { math, max } from "./math/math";
 
 // zzfx() - the universal entry point -- returns a AudioBufferSourceNode
 //@ts-ignore

@@ -1,5 +1,5 @@
-import { animation_frame } from "@root/animation";
-import { gl_push_textured_quad, gl_restore, gl_save, gl_scale, gl_translate } from "gl";
+import { animation_frame } from "../animation";
+import { gl_push_textured_quad, gl_restore, gl_save, gl_scale, gl_translate } from "./gl/gl";
 import { WHITE } from "./colour";
 
 import { Texture, TEXTURES } from "./texture/texture";

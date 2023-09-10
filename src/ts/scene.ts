@@ -1,9 +1,9 @@
-import { rgba_to_abgr_number } from "@graphics/colour";
-import { SCREEN_HEIGHT, SCREEN_WIDTH } from "@root/screen";
+import { rgba_to_abgr_number } from "./graphics/colour";
+import { SCREEN_HEIGHT, SCREEN_WIDTH } from "./screen";
 
-import { assert } from "@debug/assert";
-import { push_quad } from "@graphics/quad";
-import { clear_input, update_input_system } from "@input/controls";
+import { assert } from "./debug/assert";
+import { push_quad } from "./graphics/quad";
+import { clear_input, update_input_system } from "./input/controls";
 import { save_game } from "./game-state";
 import { lerp } from "./interpolate";
 import { clear_particle_system, render_particle_system, update_particle_system } from "./particle-system";
