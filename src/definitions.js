@@ -130,13 +130,10 @@ const PALETTES = {
   PALETTE_ZOMBIE: 28
 };
 
-let event_id = 0;
 const EVENTS = {
   EVENT_NOT_DONE: 0,
   EVENT_PENDING: 1,
   EVENT_DONE: 2,
-
-  EVENT_COIL_FIRST_TIME: event_id++,
 };
 
 const DEFINITIONS = { DEBUG: false, ...TEXTURE_TYPES, ...TEXTURES, ...FONTS, ...GL, ...CONTROLS, ...GAMESTATE, ...ENEMY_TYPES, ...PALETTES, ...EVENTS };

@@ -16,7 +16,6 @@ export namespace Hub
 {
   let selected_option_index: number;
   let number_of_options = 5;
-  let coil_on = false;
 
   let menu_options = [
     "descend",
@@ -34,21 +33,6 @@ export namespace Hub
   };
   let _update_fn = (delta: number) =>
   {
-    coil_on = monetization_reference && monetization_reference.state === "started";
-    if (coil_on)
-    {
-      if (game_state[GAMESTATE_EVENTS][EVENT_COIL_FIRST_TIME] === EVENT_NOT_DONE)
-      {
-        Dialog._push_dialog_text("thank you for supporting this game|through coil!");
-        Dialog._push_dialog_text("a few extra cards have been added|to your collection!");
-        push_scene(Dialog._scene_id);
-        game_state[GAMESTATE_CARD_COLLECTION].push(3, 4, 5, 12);
-        game_state[GAMESTATE_CARD_COLLECTION].sort(number_sort);
-        game_state[GAMESTATE_EVENTS][EVENT_COIL_FIRST_TIME] = EVENT_DONE;
-        return;
-      }
-    }
-
     if (game_state[GAMESTATE_EVENTS][1] === EVENT_PENDING)
     {
       Dialog._push_dialog_text("you have fallen in battle and|have awakened back at the entrance.");
@@ -89,8 +73,6 @@ export namespace Hub
   };
   let _render_fn = () =>
   {
-    if (!coil_on)
-      push_text("support this game via coil to get a head start with some extra cards", SCREEN_CENTER_X, SCREEN_HEIGHT - 30, SMALL_FONT_AND_CENTERED_TEXT);
     push_text("catacombs entrance", SCREEN_WIDTH - 5, 5, { _scale: 3, _align: TEXT_ALIGN_RIGHT });
     render_text_menu(SCREEN_CENTER_X, SCREEN_CENTER_Y - 50, menu_options, number_of_options, selected_option_index);
     render_resources(game_state[GAMESTATE_RESOURCES]);
