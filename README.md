@@ -1,21 +1,46 @@
-# js13k 2022 entry by David Brad
+# Forgotten Depths
 
-<br />
-<br />
+"Forgotten Depths: Path of the Necromancer" is a simplified roguelite,
+deck building game where you will craft cards, and customized your deck
+to take on the undead and their masters.
 
-# About this project
+(ported to WebXDC from https://github.com/dbrad/js13k2022)
 
-- This project is written in TypeScript, and transpiled using the [esbuild](https://esbuild.github.io/) package.
-- This project's build tools require [node.js](https://nodejs.org/en/download/) v16.8 or higher.
-- This project makes use of the [yarn](https://yarnpkg.com/getting-started) package manager.
-  - https://yarnpkg.com/getting-started/install
-- The build tools are meant to be run on Windows, using a bash-like terminal such as Git Bash or WSL.
+## Developing
 
-## This project uses a makefile to streamline the various build commands:
+### Installing Dependencies
 
-- `make install` - Installs all dependancies, and unzips some build tools from the tools.7z file included.
-- `make uninstall` - Removes build folders, dist folders, node_modules, and tools.
-- `make dev` - Development build process, puts the build into watch mode, and serves the game from "http://localhost:3000/".
-- `make release` - Release build process, this will perform a single minified transpile, inline all code into the index.html, and zip the index.html and any other assets into "/dist/game.zip".
+After cloning this repo, install dependecies:
 
-<br />
+```
+pnpm i
+```
+
+### Testing the app in the browser
+
+To test your work in your browser (with hot reloading!) while developing:
+
+```
+pnpm dev-mini
+# Alternatively to test in a more advanced WebXDC emulator:
+pnpm dev
+```
+
+### Building
+
+To package the WebXDC file:
+
+```
+pnpm build
+```
+
+The resulting optimized `.xdc` file is saved in `dist-xdc/` folder.
+
+### Releasing
+
+To automatically build and create a new GitHub release with the `.xdc` file:
+
+```
+git tag -a v1.0.1
+git push origin v1.0.1
+```
