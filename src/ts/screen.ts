@@ -18,7 +18,7 @@ export let initialize_page = (): HTMLCanvasElement =>
   document_reference.body.style.cssText = css;
 
   let stage = document_reference.createElement("div");
-  stage.style.cssText = `display:flex;flex-direction:column;align-items:center;justify-content:center;height:calc(100vw*(9/16));max-height:100vh;width:100vw;min-height:${SCREEN_HEIGHT}px`;
+  stage.style.cssText = `display:flex;flex-direction:column;align-items:center;justify-content:center;height:calc(100vw*(9/16));max-height:100vh;width:100vw`;
   document_reference.body.appendChild(stage);
 
   canvas_reference = document_reference.createElement("canvas");
