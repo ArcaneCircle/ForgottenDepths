@@ -6,14 +6,20 @@ to take on the undead and their masters.
 
 (ported to WebXDC from https://github.com/dbrad/js13k2022)
 
-## Developing
+## Contributing
 
 ### Installing Dependencies
 
-After cloning this repo, install dependecies:
+After cloning this repo, install dependencies:
 
 ```
 pnpm i
+```
+
+### Checking code format
+
+```
+pnpm check
 ```
 
 ### Testing the app in the browser
@@ -21,9 +27,7 @@ pnpm i
 To test your work in your browser (with hot reloading!) while developing:
 
 ```
-pnpm dev-mini
-# Alternatively to test in a more advanced WebXDC emulator:
-pnpm dev
+pnpm start
 ```
 
 ### Building
@@ -32,6 +36,13 @@ To package the WebXDC file:
 
 ```
 pnpm build
+```
+
+To package the WebXDC with developer tools inside to debug in Delta Chat, set the `NODE_ENV`
+environment variable to "debug":
+
+```
+NODE_ENV=debug pnpm build
 ```
 
 The resulting optimized `.xdc` file is saved in `dist-xdc/` folder.
