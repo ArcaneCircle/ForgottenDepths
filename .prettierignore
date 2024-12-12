@@ -3,4 +3,6 @@ dist-xdc
 pnpm-lock.yaml
 package-lock.json
 
+# avoid heavily modifying code for now
+src/
 src/ts/zzfx.ts
